@@ -1,0 +1,64 @@
+{
+  "name": "skypager-registry",
+  "version": "4.0.2",
+  "description": "create queryable directories of lazy loading functions",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:skypager/skypager-registry"
+  },
+  "engines": {
+    "npm": ">=3"
+  },
+  "scripts": {
+    "test": "make test",
+    "lint": "make lint",
+    "build": "make",
+    "preversion": "make"
+  },
+  "skypager": {
+    "helpersRoot": "src/helpers"
+  },
+  "author": "Jon Soeder <jon@chicago.com>",
+  "license": "UNLICENSED",
+  "babel": {
+    "presets": [
+      "skypager"
+    ]
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": [
+      "skypager"
+    ],
+    "env": {
+      "browser": true,
+      "node": true,
+      "mocha": true
+    }
+  },
+  "devDependencies": {
+    "babel-core": "^6.7.7",
+    "babel-eslint": "^6.0.4",
+    "babel-preset-skypager": "^2.58.0",
+    "babel-register": "^6.7.0",
+    "babel-polyfill": "^6.7.0",
+    "chai": "^3.5.0",
+    "esdoc-es7-plugin": "0.0.3",
+    "eslint": "^2.10.1",
+    "eslint-config-skypager": "^2.59.0",
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "path-to-regexp": "^1.5.3",
+    "skypager-util": "^4.0.2"
+  },
+  "files": [
+    "lib",
+    "package.json",
+    "index.js",
+    "test",
+    "Makefile",
+    "dist/docs"
+  ]
+}
